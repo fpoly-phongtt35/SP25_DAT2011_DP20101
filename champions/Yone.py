@@ -4,14 +4,14 @@ class Yone(Champion):
         super().__init__("Yone", "Dao kiem sanh tu")
 
     def cast_skill_q(self):
-        q = 'switcheroo'
-        return q
+        Q = 'switcheroo'
+        return Q
     def cast_skill_w(self):
-        w = 'ZAP !'
-        return w
+        W = 'ZAP !'
+        return W
     def cast_skill_e(self):
-        e = 'flame chompers !'
-        return e
+        E = 'flame chompers !'
+        return E
     def cast_skill_r(self):
-        r = 'super mega death'
-        return r
+        R = 'super mega death'
+        return R
