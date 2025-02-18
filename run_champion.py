@@ -34,14 +34,15 @@ def menu(menu_opt_dict):
 def select_skills(champion):
     opt = input('Please select skill to cast (Q - W - E - R): ')
     opt = opt.upper()
+    print(champion)
     if opt == 'Q':
-        champion.cast_skill_q()
+        return champion.cast_skill_q()
     elif opt == 'W':
-        champion.cast_skill_w()
+        return champion.cast_skill_w()
     elif opt == 'E':
-        champion.cast_skill_e()
+        return champion.cast_skill_e()
     elif opt == 'R':
-        champion.cast_skill_r()
+        return champion.cast_skill_r()
     else:
         return 'No cast'
 
