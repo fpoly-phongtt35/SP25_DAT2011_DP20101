@@ -12,7 +12,7 @@ class Ashe(Champion):
         return w
 
     def cast_skill_r(self):
-        self.skill = 'Tán xạ tiễn'
+        r = 'Tán xạ tiễn'
         return r
 
     def cast_skill_e(self):
