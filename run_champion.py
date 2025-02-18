@@ -31,6 +31,20 @@ def menu(menu_opt_dict):
         print(key, '-', champion_name)
     print('99 - Quit')
 
+def select_skills(champion):
+    opt = input('Please select skill to cast (Q - W - E - R): ')
+    opt = opt.upper()
+    if opt == 'Q':
+        champion.cast_skill_q()
+    elif opt == 'W':
+        champion.cast_skill_w()
+    elif opt == 'E':
+        champion.cast_skill_e()
+    elif opt == 'R':
+        champion.cast_skill_r()
+    else:
+        return 'No cast'
+
 while True:
     menu(menu_opt_dict)
     try:
@@ -38,7 +52,9 @@ while True:
         if opt == 99:
             break
         champion = champion_dict[opt]
-        champion.attack()
+        print('You select:', champion.get_name())
+        cast_skill = select_skills(champion)
+        print(champion.get_name(), 'cast', cast_skill)
 
         input('Enter something here to continue...')
         os.system('cls')
