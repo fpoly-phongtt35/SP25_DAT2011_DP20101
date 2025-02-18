@@ -4,10 +4,14 @@ class Jhin(Champion): # Jhin kế thừa từ Champion
         super().__init__("Jhin", "Sân khấu tử thần")
 
     def cast_skill_q(self):
-        pass
+        q = 'Lời thì thầm'
+        return q
     def cast_skill_w(self):
-        pass
-    def cast_skill_r(self):
-        pass
+        w = 'Lựu đạn nhảy múa'
+        return w
     def cast_skill_e(self):
-        pass
+        e = 'Nét vẽ chết chóc'
+        return e
+    def cast_skill_r(self):
+        r = 'Cạm bẫy nghệ thuật'
+        return r
