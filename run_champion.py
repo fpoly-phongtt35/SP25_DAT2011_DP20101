@@ -34,7 +34,6 @@ def menu(menu_opt_dict):
 def select_skills(champion):
     opt = input('Please select skill to cast (Q - W - E - R): ')
     opt = opt.upper()
-    print(champion)
     if opt == 'Q':
         return champion.cast_skill_q()
     elif opt == 'W':
