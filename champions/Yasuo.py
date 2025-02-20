@@ -10,7 +10,8 @@ class Yasuo(Champion): # Void kế thừa từ Champion
         W = 'Wind Wall'
         return W
     def cast_skill_r(self):
-        return self.skill
+        R = 'Last Breath'
+        return R
     def cast_skill_e(self):
         E = 'Sweeping Blade'
         return E
