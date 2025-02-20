@@ -12,7 +12,7 @@ class Garen(Champion): # Garen kế thừa từ Champion
         return w
 
     def cast_skill_r(self):
-        self.skill = 'Phán quyết'
+        r = 'Phán quyết'
         return r
 
     def cast_skill_e(self):
